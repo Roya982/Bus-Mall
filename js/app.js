@@ -112,3 +112,29 @@ render();
 
 render();
 handleClick();
+
+const ctx = document.getElementById('myChart').getContext('2d');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels:productNames,
+    datasets:[
+      {label:'votes',
+        barPercentage: 1,
+        barThickness: 9,
+        maxBarThickness: 9,
+        data: this.votes,
+      },{labels:productNames,
+        datasets:[
+          {label:'views',
+            barPercentage: 1,
+            barThickness: 9,
+            maxBarThickness: 9,
+            data: this.views,}
+        ]
+      },{
+      }
+    ]
+  },
+});
