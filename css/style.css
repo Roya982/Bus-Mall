@@ -1,0 +1,19 @@
+#left-image{
+    width: 150px;
+    height: 150px;
+}
+#mid-image{
+    width: 150px;
+    height: 150px;
+}
+#right-image{
+    width: 150px;
+    height: 150px;
+}
+body header h1{
+    margin: 80px;
+}
+#chose-image{
+    padding: 50px;
+    text-align: center;
+}
