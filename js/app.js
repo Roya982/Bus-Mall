@@ -138,3 +138,12 @@ new Chart(ctx, {
     ]
   },
 });
+
+localStorage.setItem('choseImage',JSON.stringify(Product.all));
+
+function getAgain(){
+  if(localStorage.length>0){
+    Product.all=JSON.parse(localStorage.getItem('choseImage'));
+  }
+  render();
+}
