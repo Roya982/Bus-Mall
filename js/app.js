@@ -43,7 +43,6 @@ function render(){
   midImage.title = Product.all[midPhoto].productShowen;
   midImage.alt = Product.all[midPhoto].productShowen;
 }
-console.table(render);
 choseImage.addEventListener('click', handleClick);
 
 function handleClick(event){
